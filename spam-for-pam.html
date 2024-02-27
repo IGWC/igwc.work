@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Spam for Pam</title>
+<style>
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; src: url("Inter-Regular.woff2") format("woff2"); }
+body{
+font-family: "Inter", system-ui, Arial, sans-serif;
+line-height: 1.5;
+font-size: 130%;
+max-width: 35em;
+margin: 1em auto
+}
+h1{
+font-size: 115%;
+font-weight: inherit;
+}
+h1 a{
+text-decoration: none;
+color: inherit;
+}
+h1 a:hover{
+color: gray;
+}
+h1 a::before{
+content: "\25CF";
+padding-right:1ch;
+color: #CC1229;
+}
+ol{
+margin: auto;
+}
+hr{
+border:none;
+border-bottom: solid 0.15em lightgray;
+}
+em{
+font-style: normal;
+text-decoration: underline;
+text-underline-offset: 0.1em;
+text-decoration-thickness: 0.1em;
+}
+figure{
+margin: 0;
+display:flex;
+align-items: center;
+font-size: 80%;
+}
+figure img{
+width: 60%;
+border-radius: 0.5em;
+margin: 1em;
+}
+figcaption{
+display: flex;
+justify-content: center;
+flex-grow: 1;
+}
+figcaption ul{
+padding-left: 1em;
+margin: 0;
+}
+#header{
+color:#9A9A9C;
+}
+#header p, .body, #email, h1{
+margin: 0.25em;
+padding: 0.25em;
+border-radius: 0.5em;
+}
+.field{
+display: flex;
+align-items: center;
+border-bottom: solid 0.15em lightgray;
+}
+.field:first-child{
+border-top: solid 0.15em lightgray;
+}
+.label{
+padding-inline-end: 0.5em;
+flex-basis: 5em;
+}
+#to{
+color:#9A9A9C;
+background-color: #E9E9EC;
+}
+#name, #email-text{
+display:inline-block;
+font-size: inherit;
+outline:none;
+border: solid 0.15em lightgray;
+padding: 0.2em 0.5ch;
+margin:0 0.25ch;
+min-width: 3ch;
+border-radius: 0.5em;
+}
+#name:focus, #email-text:focus{
+outline:none;
+border:solid 0.15em #333;
+}
+#name:empty::before{
+content:"Enter Your Name";
+color: #9A9A9C;
+}
+#email-text{
+display:block;
+}
+#email{
+background-color: #F2F2F2;
+}
+
+#customization{
+display: flex;
+max-width:100%;
+align-items: center;
+justify-content: center;
+padding: 0.5em;
+max-width: 30em;
+margin: auto;
+}
+#customization label{
+width:5ch;
+}
+#formality{
+padding:0em;
+margin:0 2ch;
+flex-grow:1;
+}
+
+#email-text{
+font-family: inherit;
+white-space: pre-wrap;
+background-color: white;
+}
+
+.button{
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+text-decoration: none;
+margin:0.5em 0 ;
+display:inline-block;
+background-color:black;
+color:white;
+font-size: inherit;
+border-radius: 1em;
+border:none;
+padding: 1em;
+cursor: pointer;
+}
+.button:active{
+background-color: gray;
+}
+@media (prefers-color-scheme:dark) {
+	body{
+	  color:white;
+	  background-color: black;
+	}
+	.field, .field:first-child{border-color: gray;}
+	#to{
+	  color: gray;
+	  background-color: #212121;
+	}
+	#name, #email-text{border-color:gray;}
+	#name:focus, #email-text:focus{border-color:#F2F2F2;}
+	#email, #email-text{background-color: #212121;}
+	.button{
+	  background-color:white;
+	  color: black;
+  }
+  .button:active{background-color:lightgray}
+}
+
+</style>
+<noscript>
+<style>
+#editor, #generateEmail{
+display: none;
+}
+</style>
+</noscript>
+</head>
+<body>
+
+<h1><a href="https://www.indianagradworkers.org">Indiana Graduate Workers Coalition</a></h1>
+
+<section id="header">
+  <div class="field">
+  <p class=label>TO:</p><p id="to">IGWC Member</p>
+  </div>
+  <div class="field">
+  <p class=label>SUBJECT:</p><p id="subject">Spam for Pam 👩‍💼</p>
+  </div>
+  <div class="field">
+  <p class=label>DATE:</p><p id="date"><script>document.write(new Date().toLocaleDateString("en-US"));</script><noscript>February 2024</noscript></p>
+  </div>
+</section>
+
+<section class="body">
+<div id="explaination">
+  <p>Hey, <span id="name" role="textbox" contenteditable="true" type="text" name="Name"></span>!</p>
+  <p>Back in January, the IGWC submitted over 1300 union cards to IU President Pamela Whitten. She ignored it. ☹️</p>
+
+  <p>The Whitten Administration refuses to even give us a union election—something which the IGWC would have qualified for within 24 hours of launching our card campaign.</p>
+
+  <p>This isn't the first time the Whitten Administration has completely disregarded the students, faculty and staff that <em>actually</em> make IU work. Maybe Whitten just hasn't been in the classroom or the lab for a while, so she doesn't know the work we do. What if we gave her a little taste of the classroom?</p>
+
+  <hr>
+
+  <p>You know when one of your students can't find the right place to submit something on Canvas, so they just email it to you? What if, as a joke, we pretended to do that about the union election that President Whitten refuses to give us?</p>
+
+  <p>Let's be a little passive agressive, as a treat 🤫. Let's send Whitten an email, politely asking where to submit out union ballot for the election <em>we deserve</em>.</p>
+</div>
+
+<div id="instructions">
+  <p>Here is how to do it:</p>
+  <ol>
+    <li>Customize your email 🤔</li>
+    <li>Click the "Generate Email" Button ⚡️</li>
+    <li>‼️Copy and paste the fake ballot into the email‼️️</li>
+    <li>Send your Email to Pam! 🙂</li>
+  </ol>
+  <br>
+</div>
+
+<div id="email">
+  <div id="editor">
+    <div id="customization">
+      <label id="formal" for="formality">Formal</label>
+      <input type="range" id="formality" name="formality" min="1" max="5" list="markers">
+      <label id="casual" for="formality">Casual</label>
+      <datalist id="markers">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+      </datalist>
+    </div>
+
+    <pre id="email-text" role="textbox" contenteditable="true" type="text">
+    </pre>
+  </div>
+
+  <figure id="ballot">
+    <img id="ballot-img" src='images/union-ballot.gif' alt='An images of a union ballot with two thick black stripes around the outside. In the top left is the Indiana University logo; in the top right is the logo for the Indiana Graduate Workers Coalition. The title reads "Uninization Ballot for certain employees of Indiana University—Bloomington. Do you want to be represented for the purposes of collective bargaining by Indiana Graduate Workers Coalition? Mark X in the Sqaure of Your Choice." The "Yes" box is marked. The whole image looks a little copy burned. It is dead on for an official ballot, but it is a fake (for the prank).'>
+    <figcaption>
+    <ul>
+      <li>Right Click</li>
+      <li>Click "Copy Image"</li>
+    </ul>
+    </figcaption>
+  </figure>
+</div>
+
+<button tabindex="0" class="button" id="generateEmail">Generate Email to Pam!</button>
+<noscript><a href="mailto:pwhitten@iu.edu?subject=Vote%20for%20Grad%20Unionization&body=Hello%2C%20President%20Whitten%2C%20%0D%0A%0D%0AI%20hope%20your%20semester%20is%20going%20well!%20%0D%0A%0D%0AI%20couldn't%20find%20any%20place%20to%20put%20my%20ballot%20for%20collective%20bargaining%20representation%20by%20the%20IGWC%2C%20so%20I%20wanted%20to%20pass%20it%20along%20to%20you%20directly!%0D%0A%20%0D%0AThanks%2C%0D%0AYour%20Name" class="button">Send an email to Pam</a></noscript>
+
+<p>Solidarity forever,<br>
+Indiana Graduate Workers Coalition<br>
+⚡️🌷✍️</p>
+</section>
+
+<script>
+const formalityInput = document.getElementById("formality");
+const emailTextElement = document.getElementById("email-text");
+const nameInput = document.getElementById("name");
+const generateEmail = document.getElementById("generateEmail");
+
+
+function updateEmailText(value) {
+  let message;
+  
+  var name = nameInput.innerText || "Your Name";
+  
+  switch (parseInt(value)) {
+    case 1:
+      message = "Dear President Whitten:\n\nI hope this email finds you well. \n\nI am writing to you today to inquire about the location to submit by ballot requesting collective bargaining representation by the Indiana Graduate Workers Union here at Indiana University. I was unable to find where to submit this authorization, so I have attached it to this email. \n\nCordially, \n" + name;
+      break;
+    case 2:
+      message = "Dear President Whitten,\n\nI hope your semester is going well.\n\nI am writing to ask where to submit by ballot for collective bargaining representation by the Indiana Graduate Workers Union. I was unable to find where to submit it, so I have attached it to this email. \n \nBest,\n" + name;
+      break;
+    case 3:
+      message = "Hello, President Whitten, \n\nI hope your semester is going well! \n\nI couldn't find any place to put my ballot for collective bargaining representation by the IGWC, so I wanted to pass it along to you directly!\n \nThanks,\n" + name;
+      break;
+    case 4:
+      message = "Hey, President Whitten, \n\nI hope your semester is going great! \n\nI was looking for where I can cast my ballot to vote for collective bargaining representation by the IGWC. I couldn’t find where to submit it, so I’m emailing it to you.\n\nThanks,\n"  + name;
+      break;
+    case 5:
+      message = "Hey, Pam. Hope your semester is going great! I was looking for where I can cast my ballot to vote for collective bargaining representation by the IGWC. I couldn’t find where to submit it, so I’m emailing it to you.\n\nThanks!\n"  + name + "\n \nP.S. You should really make it easier to cast these ballots. :)";
+      break;
+    default:
+      message = "";
+  }
+
+  if (message) {
+    emailTextElement.innerText = message;
+  } else {
+    emailTextElement.innerText = "";
+  }
+}
+
+updateEmailText(formalityInput.value);
+
+formalityInput.addEventListener("input", () => {
+  const currentValue = formalityInput.value;
+  updateEmailText(currentValue);
+});
+
+nameInput.addEventListener('input', (e) => {
+   const currentValue = formalityInput.value;
+   updateEmailText(currentValue);
+});
+
+generateEmail.addEventListener("keydown", function(event) {
+  // Check if Enter or Spacebar was pressed
+  if (event.key === "Enter" || event.key === " ") {
+    // Trigger a click event on the button
+    generateEmail.click();
+  }
+});
+
+generateEmail.addEventListener('click', () => {
+  const subjectline = ["Union Ballot Submission","Vote for Grad Unionization","Ballot Box for Union Election?","Ballot for Union","Graduate Student Unionization Vote","Vote for Union Representation","Collective Bargaining Representation by IGWC","Where to Cast Ballot for IGWC?","Ballot Submission for Grad Union","Unionization Vote?"];
+/* random subject line means its more spam-resistant */
+  const whittenEmail = "pwhitten@iu.edu"
+  const randIndex = Math.floor(Math.random() * subjectline.length);
+  const encodedSubject = encodeURI(subjectline[randIndex]);
+  const encodedEmail = encodeURI(emailTextElement.innerText);
+  
+/* try to detect whether to use outlook web or mailto link (outlook doesn't work on mobile) */
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  // mobile device
+    var url = "mailto:" + whittenEmail + "?subject=" + encodedSubject + "&body=" + encodedEmail;
+  }else{
+  // not mobile device
+    var url = "https://outlook.office.com/owa/?realm=iu.edu&rru=compose&to=" + whittenEmail + "&subject=" + encodedSubject + "&body=" + encodedEmail;
+  }
+  
+
+/*  POST TO GOOGLE SHEET  */
+  const googleSheet = "https://script.google.com/macros/s/AKfycbxoD9FYOx_4npVxxug5zWQVpulIZGu7K6AjNJrUQaNXHQK_9FVYdovEGbVGbZfKeBKg-g/exec"
+  
+  name = nameInput.innerText || "unknown";
+  
+  form = new FormData();
+  form.append("Name", name);
+  form.append("Email to Pam", emailTextElement.innerText);
+  
+  fetch(googleSheet, { method: 'POST', body: form})
+  .then(response => console.log('Success!', response))
+  .catch(error => console.error('Error!', error.message));
+
+  window.open(url, "_blank");
+});
+</script>
+</body>
+</html>
