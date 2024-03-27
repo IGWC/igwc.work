@@ -4,4 +4,4 @@
 /spam-for-pam /spam-for-pam.html 200
 /strike-town-hall https://docs.google.com/forms/d/e/1FAIpQLSfSRnfXyQMhBjB34q-XlLOBkDiO-gGDoFC6WK4brqmhR9iQpQ/viewform 301 
 /strike-pledge https://forms.gle/f4XTPgnoc6gkHRk3A 301
-/strike-pledge* https://forms.gle/f4XTPgnoc6gkHRk3A 301
+/strike-pledge/* https://forms.gle/f4XTPgnoc6gkHRk3A 301
