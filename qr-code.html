@@ -650,7 +650,7 @@ margin:16px;
   <label for="primary">Color:</label>
 <!--   <input type="color" id="primary" name="primary" value="#000000"> -->
   
-  <input type="text" id="primary" name="primary" value="#000000" required maxlength="9" />
+  <input title="Accepts any color format" type="text" id="primary" name="primary" value="black" required maxlength="9" />
 </div>
 
 <!-- i've literally never need the background color for a QR code, but theorhetically it could be neccesary  -->
@@ -685,7 +685,6 @@ margin:16px;
     <option value="256" selected>256&times;256</option>
     <option value="128">128&times;128</option>
     <option value="64">64&times;64</option>
-    <option value="32">32&times;32</option>
   </select>
 </div>
 
@@ -714,29 +713,29 @@ qrSize.addEventListener("change", updateQR);
 
 let timer;
 inputURL.addEventListener('keyup', (e) => {
-  keyPresses(e, 1000)
+  keyPresses(e, inputURL, "igwc.work", 1000)
 });
 inputURL.addEventListener("blur", function() {
   updateQR()
 });
 primary.addEventListener('keyup', (e) => {
-  keyPresses(e, 500)
+  keyPresses(e, primary, "black", 500)
 });
 primary.addEventListener("blur", function() {
   updateQR()
 });
 
 
-function keyPresses(e, time) {
+function keyPresses(e, input, value, time) {
 var keyCode = event.which || event.keyCode;
   if ( keyCode === 13) { // Check for Enter key press
       event.preventDefault();
-      if (inputURL.value) {    
+      if (input.value) {    
         /* downloadQR(); */
         event.preventDefault();
         document.activeElement.blur()
       } else {
-        inputURL.value = "igwc.work"
+        input.value = value
       }
       document.activeElement.blur();
     } else if (keyCode === 27) { // Check for Escape key press
