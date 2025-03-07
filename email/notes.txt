@@ -4,5 +4,3 @@ NOTES
 mailto for unsubscribe
 
 Change font CSS url to "https://rsms.me/inter/font-files/Inter-Medium.woff2?v=4.1"
-
-Add tracking pixel `<img style="display:block;outline:none;border:none;text-decoration:none;width:1px;" src="https://stats.igwc.work/count?t=/EMAIL_SUBJECT">`
