@@ -1,6 +1,27 @@
 NOTES
 =====
 
-mailto for unsubscribe
 
-Change font CSS url to "https://rsms.me/inter/font-files/Inter-Medium.woff2?v=4.1"
+```
+    <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: normal;
+      mso-font-alt: 'sans-serif';
+      src: url(https://rsms.me/inter/font-files/Inter-Medium.woff2?v=4.1) format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: bold;
+      mso-font-alt: 'sans-serif';
+      src: url(https://rsms.me/inter/font-files/Inter-Bold.woff2?v=4.1) format('woff2');
+    }
+
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    </style>
+
+```
