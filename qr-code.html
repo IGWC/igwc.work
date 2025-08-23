@@ -1020,6 +1020,7 @@ var app;
             drawCanvas(qr, scale, border, lightColor, darkColor, canvas);
             canvas.style.removeProperty("display");
             download.href = canvas.toDataURL("image/png");
+            download.download = text.replace("https://", "").replace("http://", "").replace("/", "-") + ".png";
         }
         else {
             const code = toSvgString(qr, border, lightColor, darkColor);
@@ -1031,6 +1032,7 @@ var app;
             svg.querySelector("path").setAttribute("fill", darkColor);
             svg.style.removeProperty("display");
             download.href = "data:application/svg+xml," + encodeURIComponent(code);
+            download.download = text.replace("https://", "").replace("http://", "").replace("/", "-") + ".svg";
         }
         // Returns a string to describe the given list of segments.
         function describeSegments(segs) {
